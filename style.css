@@ -1,0 +1,68 @@
+body {
+    font-family: 'Albert Sans';
+    background-color: #F8F9FB;
+}
+
+/* HEADER */
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    justify-content: space-between;
+    padding: 25px 80px;
+    box-shadow: 0 1px 8px -4px black;
+}
+
+#logo {
+    height: 63px;
+}
+
+#navegacion {
+    width: 20em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: #282828;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* TITULO */
+
+main {
+    display: grid;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+#cabezal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+#paletas {
+    font-weight: 800;
+    background: linear-gradient(to right, #A941C5, #EE3C84, #EF587D, #F79462, #FDC554, #BFD560, #50C6D5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#cabezal p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #585858;
+}
