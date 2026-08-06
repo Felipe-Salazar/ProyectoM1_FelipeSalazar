@@ -28,11 +28,11 @@
             <p>Crea combinaciones increibles de colores con un clic</p>
         </section>
     
-        <section>
-            <div class="botones">
+        <section id="opciones">
+            <div id="seleccionTamaño">
                 <p>Tamaño de paleta</p>
     
-                <div>
+                <div id="numerosTamaño">
                     <button class="tamaño" data-tamaño="6">6</button>
                     <button class="tamaño" data-tamaño="8">8</button>
                     <button class="tamaño" data-tamaño="9">9</button>
@@ -50,97 +50,98 @@
             </button>
         </section>
     
-        <section>
+        <section id="paletaColores">
             <div id="contenedorPaleta">
                 <article class="cajaColor" data-locked="false">
-                    <div>
-                        <button class="copiar">
-                            <img src="" alt="copy">
+                    <div class="copiar">
+                        <button class="botonCopiar">
+                            <img src="Material/copy.png" alt="copy">
                             <p>Copiar</p>
                         </button>
                     </div>
-                    <div>
-                        <p class="hexa"></p>
-                        <button class="candado">
-                            <img src="" alt="unlock">
+                    <div class="hexa">
+                        <p class="textoHexa">#45ADS6</p>
+                        <button class="botonCandado">
+                            <img src="Material/unlock.png" alt="unlock">
                         </button>
                     </div>
                 </article>
-    
+                
                 <article class="cajaColor" data-locked="false">
-                    <div>
-                        <button class="copiar">
-                            <img src="" alt="copy">
+                    <div class="copiar">
+                        <button class="botonCopiar">
+                            <img src="Material/copy.png" alt="copy">
                             <p>Copiar</p>
                         </button>
                     </div>
-                    <div>
-                        <p class="hexa"></p>
-                        <button class="candado">
-                            <img src="" alt="unlock">
+                    <div class="hexa">
+                        <p class="textoHexa">#45ADS6</p>
+                        <button class="botonCandado">
+                            <img src="Material/unlock.png" alt="unlock">
                         </button>
                     </div>
                 </article>
-    
+
                 <article class="cajaColor" data-locked="false">
-                    <div>
-                        <button class="copiar">
-                            <img src="" alt="copy">
+                    <div class="copiar">
+                        <button class="botonCopiar">
+                            <img src="Material/copy.png" alt="copy">
                             <p>Copiar</p>
                         </button>
                     </div>
-                    <div>
-                        <p class="hexa"></p>
-                        <button class="candado">
-                            <img src="" alt="unlock">
+                    <div class="hexa">
+                        <p class="textoHexa">#45ADS6</p>
+                        <button class="botonCandado">
+                            <img src="Material/unlock.png" alt="unlock">
                         </button>
                     </div>
                 </article>
-    
+
                 <article class="cajaColor" data-locked="false">
-                    <div>
-                        <button class="copiar">
-                            <img src="" alt="copy">
+                    <div class="copiar">
+                        <button class="botonCopiar">
+                            <img src="Material/copy.png" alt="copy">
                             <p>Copiar</p>
                         </button>
                     </div>
-                    <div>
-                        <p class="hexa"></p>
-                        <button class="candado">
-                            <img src="" alt="unlock">
+                    <div class="hexa">
+                        <p class="textoHexa">#45ADS6</p>
+                        <button class="botonCandado">
+                            <img src="Material/unlock.png" alt="unlock">
                         </button>
                     </div>
                 </article>
-    
+
                 <article class="cajaColor" data-locked="false">
-                    <div>
-                        <button class="copiar">
-                            <img src="" alt="copy">
+                    <div class="copiar">
+                        <button class="botonCopiar">
+                            <img src="Material/copy.png" alt="copy">
                             <p>Copiar</p>
                         </button>
                     </div>
-                    <div>
-                        <p class="hexa"></p>
-                        <button class="candado">
-                            <img src="" alt="unlock">
+                    <div class="hexa">
+                        <p class="textoHexa">#45ADS6</p>
+                        <button class="botonCandado">
+                            <img src="Material/unlock.png" alt="unlock">
                         </button>
                     </div>
                 </article>
-    
+
                 <article class="cajaColor" data-locked="false">
-                    <div>
-                        <button class="copiar">
-                            <img src="" alt="copy">
+                    <div class="copiar">
+                        <button class="botonCopiar">
+                            <img src="Material/copy.png" alt="copy">
                             <p>Copiar</p>
                         </button>
                     </div>
-                    <div>
-                        <p class="hexa"></p>
-                        <button class="candado">
-                            <img src="" alt="unlock">
+                    <div class="hexa">
+                        <p class="textoHexa">#45ADS6</p>
+                        <button class="botonCandado">
+                            <img src="Material/unlock.png" alt="unlock">
                         </button>
                     </div>
                 </article>
+                
             </div>
         </section>
 
@@ -148,21 +149,27 @@
 
 
     <footer>
-        <article>
-            <div>
-                <img src="" alt="">
-                <h3>Rápido y simple</h3>
-                <p>Genera paletas completas con solo un click</p>
+        <article id="tooltip">
+            <div class="tip">
+                <img src="Material/conejo.png" alt="conejo">
+                <div class="textoTip">
+                    <h3>Rápido y simple</h3>
+                    <p>Genera paletas completas <br>con solo un click.</p>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>Bloquea colores</h3>
-                <p>Mantén tus colores favoritos<br>y crea nuevas combinaciones.</p>
+            <div class="tip">
+                <img src="Material/seguro.png" alt="seguro">
+                <div class="textoTip">
+                    <h3>Bloquea colores</h3>
+                    <p>Mantén tus colores favoritos<br>y crea nuevas combinaciones.</p>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>Copia fácil</h3>
-                <p>Copia el código HEX de cualquier color facilmente.</p>
+            <div class="tip">
+                <img src="Material/copiado.png" alt="copiado">
+                <div class="textoTip">
+                    <h3>Copia fácil</h3>
+                    <p>Copia el código HEX de cualquier color facilmente.</p>
+                </div>
             </div>
         </article>
     </footer>

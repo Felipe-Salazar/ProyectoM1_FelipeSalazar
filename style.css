@@ -3,6 +3,7 @@ body {
     background-color: #F8F9FB;
 }
 
+
 /* HEADER */
 
 header {
@@ -32,19 +33,21 @@ header {
     font-weight: 400;
 }
 
+
 /* TITULO */
 
 main {
-    display: grid;
+    display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
+    align-items: center;
 }
 
 #cabezal {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 35px;
 }
 
 #titulo {
@@ -65,4 +68,246 @@ main {
     font-size: 20px;
     font-weight: 400;
     color: #585858;
+}
+
+
+/* OPCIONES */
+
+#opciones {
+    width: 50em;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px;
+    margin-top: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.08);
+}
+
+#seleccionTamaño {
+    width: 25%;
+}
+
+#seleccionTamaño p {
+    font-weight: 600;
+    font-size:18px;
+    margin-bottom: 12px;
+}
+
+#numerosTamaño{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tamaño {
+    width: 60px;
+    height: 45px;
+    background-color: #FFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tamaño:hover,
+.tamaño.activo {
+    background-color: #E9ECFF;
+    border-color: #3B48A5;
+    transition: 0.3s;
+}
+
+#generarPaleta {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    width: 30%;
+    height: 65px;
+    background-color: #3B48A5;
+    border-radius: 15px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0  20px;
+    transition: 0.3s;
+}
+
+#generarPaleta img {
+    height: 25px;
+}
+
+#generarPaleta:hover {
+    background-color: #606ed8;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+#borrarBloqueos {
+    width: 25%;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 12px;
+    background-color: #FFF;
+    border: 2px solid #C9C9C9;
+    border-radius: 10px;
+}
+
+#borrarBloqueos img {
+    height: 25px;
+}
+
+#borrarBloqueos:hover {
+    background-color: #e4e4e4;
+    transition: 0.3s;
+}
+
+
+/* PALETA DE COLORES */
+
+#paletaColores {
+    width: 70em;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    margin: 35px 0 ;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.08);
+}
+
+#contenedorPaleta {
+    width: 90%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cajaColor {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: red;
+}
+
+.cajaColor:hover {
+    cursor: pointer;
+    background: linear-gradient(red 50%, black);
+}
+
+.copiar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cajaColor:hover .copiar {
+    opacity: 1;
+}
+
+.botonCopiar {
+    width: auto;
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.botonCopiar img {
+    width: 12px;
+    margin-right: 5px;
+}
+
+.hexa {
+    width: auto;
+    height: 50px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: auto;
+    padding: 0  15%;
+    font-weight: 500;
+    font-size:12px;
+}
+
+.botonCandado {
+    width: 12px;
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+    padding: 0;
+}
+
+.botonCandado img {
+    width: 12px;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 120px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+#tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.tip {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    margin: 0 20px;
+
+}
+
+.tip img {
+    width: 60px;
+}
+
+.textoTip h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.textoTip p {
+    color: #6B6B6B;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 7px;
 }
