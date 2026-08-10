@@ -189,7 +189,7 @@ main {
 /* PALETA DE COLORES */
 
 #paletaColores {
-    width: 70em;
+    width: 80em;
     background-color: #FFF;
     display: flex;
     align-items: center;
@@ -221,11 +221,11 @@ main {
 .color {
     width: 100%;
     height: 250px;
-    background-color: red;
+    background-color: var(--colorCaja);
 }
 
 .color:hover {
-    background: linear-gradient(red 70%, black);
+    background: linear-gradient(var(--colorCaja) 70%, black);
 }
 
 .copiar {
@@ -270,16 +270,16 @@ main {
     background-color: #FFF;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: auto;
-    padding: 10px 15% 0;
+    padding: 10px 8% 0;
     font-weight: 500;
-    font-size:12px;
+    font-size:14px;
 }
 
 .textoFormato {
-    font-size: 10px;
-    color: #6B6B6B;
+    font-size: 9px;
+    color: #252525;
     margin-top: 8px;
 }
 
