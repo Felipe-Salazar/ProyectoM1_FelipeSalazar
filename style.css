@@ -54,7 +54,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 #titulo {
@@ -87,7 +87,7 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 25px 50px;
-    margin-top: 35px;
+    margin-top: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.08);
 }
@@ -195,7 +195,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 30px 0 20px;
-    margin: 35px 0 ;
+    margin: 25px 0 ;
     border-radius: 15px;
     box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.08);
 }
@@ -279,7 +279,8 @@ main {
 
 .textoFormato {
     font-size: 9px;
-    color: #252525;
+    font-weight: 500;
+    color: #000000;
     margin-top: 8px;
 }
 
@@ -297,6 +298,151 @@ main {
 .botonCandado img {
     width: 12px;
 }
+
+
+
+/* GUARDAR PALETAS */
+
+#guardarPaletas {
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#botonGuardar{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    width: 20%;
+    height: 40px;
+    background-color: #42AE58;
+    border-radius: 15px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0  20px;
+    transition: 0.3s;
+}
+
+#botonGuardar:hover {
+    background-color: #67d47d;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+/* Contenedor Paletas Guardas */
+
+#paletasGuardadas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorGuardado{
+    width: 60em;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 10px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px 5px rgba(0, 0, 0, 0.08);
+        position: relative;
+}
+
+.contenedorColoresGuardado {
+    width: 94%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.eliminarGuardado {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 0 none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: #a3a3a3;
+    cursor: pointer;
+}
+
+.colorCajaGuardado {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.colorGuardado {
+    width: 100%;
+    height: 150px;
+    background-color: var(--colorCaja);
+}
+
+.colorGuardado:hover {
+    background: linear-gradient(var(--colorCaja) 70%, black);
+}
+
+.copiarGuardado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.colorGuardado:hover .copiarGuardado {
+    opacity: 1;
+}
+
+.botonCopiarGuardado {
+    width: auto;
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.botonCopiarGuardado img {
+    width: 12px;
+    margin-right: 5px;
+}
+
+.hexaGuardado {
+    width: auto;
+    height: 20px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size:12px;
+}
+
 
 
 /* FOOTER */
@@ -338,4 +484,36 @@ footer {
     font-size: 12px;
     font-weight: 400;
     margin-top: 7px;
+}
+
+
+
+/* TOASTS */
+#contenedorToasts {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+}
+
+.toast {
+    background-color: #282828;
+    color: #FFF;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;    
+}
+
+.toast.mostrar {
+    opacity: 1;
+    transform: translateY(0);
 }

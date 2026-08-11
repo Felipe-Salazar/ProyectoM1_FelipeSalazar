@@ -63,6 +63,7 @@
         
             <section id="paletaColores">
                 <div id="contenedorPaleta">
+
                     <article class="cajaColor" data-locked="false">
                         <div class="color">
                             <div class="copiar">
@@ -84,6 +85,38 @@
                     </article>
 
                 </div>
+            </section>
+
+            <section id="guardarPaletas">
+                <button id="botonGuardar">Guardar Paleta</button>
+
+                <section id="paletasGuardadas">
+                    <template id="plantillaGuardada">
+                        <section class="contenedorGuardado" data-id="">
+                            <button class="eliminarGuardado">X</button>
+                            
+                            <section class="contenedorColoresGuardado">
+
+                                <div class="colorCajaGuardado">
+                                    <div class="colorGuardado">
+                                        <div class="copiarGuardado">
+                                            <button class="botonCopiarGuardado">
+                                                <img src="Material/copy.png" alt="copy">
+                                                <p>Copiar</p>
+                                            </button>
+                                        </div>
+                                    </div> 
+                                    <div class="hexaGuardado">
+                                        <p class="textoHexaGuardado"></p>
+                                    </div>                      
+                                </div>
+
+                            </section>
+    
+                        </section>
+                    </template>
+
+                </section>
             </section>
 
         </main>
@@ -118,5 +151,6 @@
         <script src="index.js"></script>
         <script src="prueba.js"></script>
 
+        <div id="contenedorToasts"></div>
     </body>
 </html>
