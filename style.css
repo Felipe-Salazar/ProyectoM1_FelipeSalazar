@@ -20,24 +20,10 @@ header {
     height: 63px;
 }
 
-#navegacion {
-    width: 20em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.linkNav {
-    text-decoration: none;
-    color: #282828;
-    font-size: 20px;
+header p {
+    font-size: 14px;
     font-weight: 400;
-}
-
-#principal {
-    font-weight: 600;
-    color: #181818;
-    border-bottom: 3px solid #3B48A5;
-    padding-bottom: 5px;
+    color: #6B6B6B;
 }
 
 
